@@ -86,6 +86,8 @@ body{
     padding-bottom: 5px;
     padding-left: 20px;
     padding-right: 20px;
+    display: flex;
+    flex-direction: column;
   }
   .tıpı a:hover {
      background-color: gray;
@@ -96,9 +98,9 @@ body{
     text-decoration: none;
     font-weight: bold;
     color: black;
-    font-size: 20px;
+    font-size: 15px;
     padding-top: 3px;
     padding-bottom: 5px;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
   }
