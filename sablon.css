@@ -29,6 +29,7 @@ body{
     width: 15%;
     position: fixed;
     background-color: #BBBBBB;
+    padding: 0;
 }
 .sag{
     padding-top: 40px;
@@ -59,7 +60,7 @@ body{
     display: flex;
     flex-direction: column;
     width: 100%;
-    height: 900px;
+    height: calc(100vh - 80px);
     overflow-y: scroll; /* Yalnızca dikey kaydırma */
     overflow-x: hidden;
     border: 1px solid #ccc;
@@ -78,8 +79,9 @@ body{
     flex: 1;
     text-align: left;
     text-decoration: none;
+    font-weight: bold;
     color: black;
-    font-size: 16px;
+    font-size: 20px;
     padding-top: 3px;
     padding-bottom: 5px;
     padding-left: 20px;
@@ -87,4 +89,16 @@ body{
   }
   .tıpı a:hover {
      background-color: gray;
+  }
+  .acilir {
+    flex: 1;
+    text-align: left;
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+    font-size: 20px;
+    padding-top: 3px;
+    padding-bottom: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
   }
