@@ -1,11 +1,33 @@
-var menuLink = document.getElementById("menuLink");
-var menuContent = document.getElementById("menuContent");
+var mLk1 = document.getElementById("mLk1");
+var mCt1 = document.getElementById("mCt1");
 
-menuLink.addEventListener("click", function(e) {
+mLk1.addEventListener("click", function(e) {
   e.preventDefault();
-  if (menuContent.style.display === "block") {
-    menuContent.style.display = "none";
+  if (mCt1.style.display === "block") {
+    mCt1.style.display = "none";
   } else {
-    menuContent.style.display = "block";
+    mCt1.style.display = "block";
   }
 });
+var mLk2 = document.getElementById("mLk2");
+var mCt2 = document.getElementById("mCt2");
+
+mLk2.addEventListener("click", function(e) {
+  e.preventDefault();
+  if (mCt2.style.display === "block") {
+    mCt2.style.display = "none";
+  } else {
+    mCt2.style.display = "block";
+  }
+});
+var mLk3 = document.getElementById("mLk3");
+var mCt3 = document.getElementById("mCt3");
+
+mLk3.addEventListener("click", function(e) {
+    e.preventDefault();
+    if (mCt3.style.display === "block") {
+      mCt3.style.display = "none";
+    } else {
+      mCt3.style.display = "block";
+    }
+  });
