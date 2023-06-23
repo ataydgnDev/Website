@@ -1,0 +1,90 @@
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0px;
+    padding: 0px;
+    background-color: #BBBBBB;
+}
+
+.sayfa{
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    background-color: white;  /* İsteğe bağlı */
+  /*height: 1000px; * Etkiyi görmek için test edebilirsiniz.*/
+}
+
+.icerik {
+    margin-top: 80px;
+  }
+
+.sutun{
+    float: left;
+    padding: 10px;
+}
+.sol{
+    width: 15%;
+    position: fixed;
+    background-color: #BBBBBB;
+}
+.sag{
+    padding-top: 40px;
+    background-color: aqua;
+    width: 15%;   
+}
+.orta{
+    padding: 30px;
+    padding-top: 40px;
+    width: 70%;
+    background-color: aquamarine;
+    margin-left: 15%;
+}
+.icerik:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.alt {
+    background-color: black;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+.ders-menu {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 900px;
+    overflow-y: scroll; /* Yalnızca dikey kaydırma */
+    overflow-x: hidden;
+    border: 1px solid #ccc;
+    padding: 10px;
+    padding-bottom: 20px;
+    background-color: transparent;
+  }
+
+  .ders-konu, .ders-baslik {
+    padding: 5px 0;
+  }
+  .tıpı {
+    display: flex;
+  }
+  .tıpı a {
+    flex: 1;
+    text-align: left;
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+    padding-top: 3px;
+    padding-bottom: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .tıpı a:hover {
+     background-color: gray;
+  }
