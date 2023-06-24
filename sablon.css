@@ -1,90 +1,245 @@
 
 *{
-    box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.logo{
+  padding-left: 20px;
+  width: 64px;
+  height: auto;
 }
 
 body{
-    margin: 0px;
-    padding: 0px;
-    background-color: #BBBBBB;
+  margin: 0px;
+  padding: 0px;
+  background-color: #BBBBBB;
 }
 
 .sayfa{
-    width: 100%;
-    height: 100%;
-    margin: 0 auto;
-    background-color: white;  /* İsteğe bağlı */
-  /*height: 1000px; * Etkiyi görmek için test edebilirsiniz.*/
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  background-color: white;  /* İsteğe bağlı */
+/*height: 1000px; * Etkiyi görmek için test edebilirsiniz.*/
 }
 
 .icerik {
-    margin-top: 80px;
-  }
+  margin-top: 80px;
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+  color: #dddddd;
+  background-color: #1d2a35;
+}
 
 .sutun{
-    float: left;
-    padding: 10px;
+  float: left;
+  padding: 10px;
 }
 .sol{
-    width: 15%;
-    position: fixed;
-    background-color: #BBBBBB;
+  width: 15%;
+  position: fixed;
+  background-color: #222d45;
+  padding: 0;
+  margin-left: -2px;
 }
 .sag{
-    padding-top: 40px;
-    background-color: aqua;
-    width: 15%;   
+  display: block;
+  padding-top: 40px;
+  background-color: #1d2a35;
+  width: 15%;   
+  height: calc(100vh - 80px);
+  overflow-y: auto; /* Yalnızca dikey kaydırma */
+  overflow-x: hidden;
 }
 .orta{
-    padding: 30px;
-    padding-top: 40px;
-    width: 70%;
-    background-color: aquamarine;
-    margin-left: 15%;
+  padding: 30px;
+  padding-top: 40px;
+  width: 70%;
+  background-color: #1d2a35;
+  margin-left: 15%;
+  border-right: 1px solid #ffffff;
+  
 }
 .icerik:after {
-    content: "";
-    display: table;
-    clear: both;
-}
-
-.alt {
-    background-color: black;
-    color: white;
-    padding: 10px;
-    text-align: center;
+  content: "";
+  display: table;
+  clear: both;
 }
 
 .ders-menu {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    height: 900px;
-    overflow-y: scroll; /* Yalnızca dikey kaydırma */
-    overflow-x: hidden;
-    border: 1px solid #ccc;
-    padding: 10px;
-    padding-bottom: 20px;
-    background-color: transparent;
-  }
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: calc(100vh - 80px);
+  overflow-y: auto; /* Yalnızca dikey kaydırma */
+  overflow-x: hidden;
+  padding: 10px;
+  padding-left: 15px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: transparent;
+}
 
-  .ders-konu, .ders-baslik {
-    padding: 5px 0;
+.ders-konu, .ders-baslik {
+  padding: 5px 0;
+}
+.tıpı {
+  display: flex;
+}
+.tıpı a {
+  width: 100%;
+  flex: 1;
+  text-align: left;
+  text-decoration: none;
+  font-weight: normal;
+  color: #dddddd;
+  font-size: 16px;
+  padding-top: 3px;
+  padding-bottom: 5px;
+  padding-left: 10px;
+  padding-right: 0px;
+  display: flex;
+  flex-direction: column;
   }
-  .tıpı {
-    display: flex;
-  }
-  .tıpı a {
-    flex: 1;
-    text-align: left;
-    text-decoration: none;
-    color: black;
-    font-size: 16px;
-    padding-top: 3px;
-    padding-bottom: 5px;
-    padding-left: 20px;
-    padding-right: 20px;
-  }
-  .tıpı a:hover {
-     background-color: gray;
-  }
+.tıpı a:hover {
+   background-color: gray;
+}
+.selected {
+  background-color: #2a9d8f;
+} 
+.acilir {
+  flex: 1;
+  text-align: left;
+  text-decoration: none;
+  font-weight: bold;
+  color: black;
+  font-size: 15px;
+  padding-top: 3px;
+  padding-bottom: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.ders-menu h1{
+  font-size: 5px;
+}
+
+.ust-butonlar{
+
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  padding-top: 25px;
+}
+
+.geri-btn {
+  margin-left: 15px;
+  margin-top: 15px;
+  padding: 1.3em 3em;
+  width: 150px;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+  font-weight: 500;
+  color: #ffffff;
+  background-color: #2a9d8f;
+  border: none;
+  border-radius: 45px;
+  box-shadow: 0px 8px 15px rgba(128, 237, 153, 0.1);
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+  outline: none;
+  font-family: Consolas,Menlo,"courier new",monospace;
+  font-weight: 20;
+  text-decoration: none;
+  text-align: center;
+}
+
+.geri-btn:hover {
+  background-color: #14213d;
+  box-shadow: 0px 15px 20px rgba(20, 33, 61, 0.4);
+  color: #fff;
+  transform: translateY(-7px);
+}
+
+.geri-btn:active {
+  transform: translateY(-1px);
+}
+
+.ileri-btn {
+  margin-right: 0;
+  margin-top: 15px;
+  padding: 1.3em 3em;
+  width: 150px;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+  font-weight: 500;
+  color: #ffffff;
+  background-color: #2a9d8f;
+  border: none;
+  border-radius: 45px;
+  box-shadow: 0px 8px 15px rgba(128, 237, 153, 0.1);
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+  outline: none;
+  font-family: Consolas,Menlo,"courier new",monospace;
+  font-weight: 20;
+  text-decoration: none;
+  text-align: center;
+}
+
+.ileri-btn:hover {
+  background-color: #14213d;
+  box-shadow: 0px 15px 20px rgba(20, 33, 61, 0.4);
+  color: #fff;
+  transform: translateY(-7px);
+}
+
+.ileri-btn:active {
+  transform: translateY(-1px);
+}
+
+.alt-liste li{
+  padding-left: 20px;
+}
+
+/*Örnek kod kısmı*/
+
+.ornek-kod{
+  display: inline-block;
+  width: 100%;
+  background-color: #2a9d8f;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.kod-yeri{
+  display: inline-block;
+  width: 100%;
+  background-color: #1d2a35;
+  margin-bottom: 10px;
+  padding: 20px;
+  margin-top: 10px;
+  border-radius: 2px;
+  white-space: nowrap;
+  font-family: Consolas,Menlo,"courier new",monospace;
+}
+
+.alt-butonlar{
+  padding-top: 40px;
+  display: flex;
+  justify-content:space-between
+}
+.alt-baslik {
+  padding-top:5%;
+}
+::-webkit-scrollbar {
+  width: 10px;
+  background-color: transparent;
+}
+::-webkit-scrollbar-track {
+  background-color: #1d2a35
+}
+::-webkit-scrollbar-thumb {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
